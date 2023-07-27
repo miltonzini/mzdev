@@ -1,0 +1,295 @@
+// mediaqueries 
+    //     0-639px --   640px-1023px --  1024px-1399px -- 1400px-inf
+    // 0-39.9375em -- 40em-63.9375em -- 64em-87.4375em -- 87.5em-inf
+    
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    
+html
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px
+    scroll-behavior: smooth
+    box-sizing: border-box
+
+.body
+    margin: 0
+    padding: 0
+    line-height: 1.3
+
+    &.noscroll
+        overflow: hidden
+
+a, a:visited, a:hover
+    text-decoration: none
+
+strong
+    font-weight: bold
+
+h1
+    text-transform: uppercase
+    font-weight: bold
+    font-size: $font-xl
+    @include breakpoint-down(small)
+        font-size: $font-md
+h2.section-title
+    color: $theme-primary
+    font-weight: bold
+    font-size: 1.5em
+    text-align: center
+
+section
+    scroll-margin-top: 51px // navbar height
+
+.row
+    padding-left: 1.5em
+    padding-right: 1.5em
+
+    &-wide
+        min-width: 100%
+
+.wrapper
+    //background: pink
+    display: flex
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+    @media (max-width: 575px)
+        max-width: 550px
+    @media (min-width: 576px) and (max-width: 767px)
+        max-width: 575px
+    @media (min-width: 768px) and (max-width: 991px)
+        max-width: 768px
+    @media (min-width: 992px) and (max-width: 1199px)
+        max-width: 960px
+    @media (min-width: 1200px) 
+        max-width: 1140px    
+
+.card
+    background-color: $white
+    display: flex
+    border-radius: 8px
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15), -8px -8px 31px darken(white, 2.5%)
+    transition: 0.3s
+    
+    &:hover
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+    &-vertical
+        padding: 1em
+        margin: 1em
+        align-items: center
+        min-height: 18em
+        max-width: 18rem 
+        min-width: 10rem
+    &-imgLeft
+        // background: rgb(255, 255, 255)
+        width: 27rem
+        min-height: 8rem
+        overflow: hidden
+        border-radius: 4px
+        border-radius: 10px
+        transition: all .2s
+        line-height: 1em
+        margin-bottom: 1em
+        margin-left: 0.4em
+        margin-right: 0.4em
+        color: $theme-darkgray
+        display: flex
+        flex-direction: row
+        @media (max-width: 574px)
+            width: 100%
+    
+        p
+            margin-bottom: 0    
+            line-height: 1.2em
+        &:hover, &:focus
+            box-shadow: 5px 5px 12px rgba(34, 35, 58, 0.2)
+            text-decoration: none
+            font-weight: inherit
+        
+        h2 
+            margin: 0
+            padding: 0 1em
+
+        h3
+            margin-top: 0!important
+            margin-bottom: 0.2em
+            font-weight: bold
+            text-align: left
+            text-align: center
+
+        .portada 
+            height: auto
+            overflow: hidden
+            position: relative
+            width: 30%
+
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+
+
+        .card-content
+            width: 70%
+            flex-grow: 1
+            line-height: 1rem
+            @media (min-width: 575px)
+                padding: 0.5rem
+
+            .card-text 
+                display: grid
+                background: $white
+                z-index: 1001
+                text-align: center
+                padding: 0.5em 0.7em
+                p
+                    text-align: left
+
+                .titulo
+                    font-weight: bold
+                .ubicacion
+                    display: flex // center icon vertically
+                    align-items: center
+                    align-items: center
+
+                .servicios
+                    padding-top: 0.3rem
+                    padding-bottom: 0.3rem
+                    display: flex
+                    flex-direction: row
+                    flex-wrap: wrap
+                    p
+                        font-size: $font-nano
+                        width: fit-content
+                        display: inline
+                        margin: 0.05rem
+                .card-icon
+                    margin-right: 0.2rem
+    .card-icon
+        width: 1rem
+        height: auto
+
+
+// spacing
+.container
+    padding-left: 20px
+    padding-right: 20px
+    
+// flexbox
+.flex
+    display: flex
+
+    &-jc-sb
+        justify-content: space-between
+
+    &-jc-c
+        justify-content: center
+        flex-wrap: wrap
+
+    &-ai-c
+        align-items: center
+
+// Buttons
+    //
+
+// Visibility
+.hide-for-mobile
+    @include breakpoint-down(small)
+        display: none
+
+.hide-for-desktop
+    @include breakpoint-up(medium)
+        display: none
+
+// MODALS //
+// The Modal (background) 
+.modal 
+  display: none // Hidden by default 
+  position: fixed // Stay in place 
+  z-index: 1 // Sit on top 
+  left: 0
+  top: 0
+  width: 100% // Full width 
+  height: 100% // Full height 
+  overflow: auto // Enable scroll if needed 
+  background-color: rgb(0,0,0) // Fallback color 
+  background-color: rgba(0,0,0,0.4) // Black w/ opacity 
+
+
+// Modal Content-Box
+.modal-content 
+  color: $theme-dark
+  background-color: $theme-soft
+  margin-top: 10%
+  margin-left: auto
+  margin-right: auto
+  padding: 20px
+  border: 1px solid #888
+  border-radius: 5px
+  max-width: 80% // Could be more or less, depending on screen size 
+
+
+// The Close Button 
+.close 
+  color: #aaa
+  float: right
+  font-size: 28px
+  font-weight: bold
+
+
+.close:hover,
+.close:focus 
+  color: black
+  text-decoration: none
+  cursor: pointer
+
+ul 
+  list-style: none
+  //font-size: 1.2em
+  margin-bottom: 1em
+  text-align: left!important
+  line-height: 1.2em
+
+
+    
+li::before 
+    content: ""
+    background: $theme-primary
+    width: 0.4rem
+    height: 0.4rem
+    border-radius: 50%
+    display: inline-block
+    line-height: 1rem
+    color: white
+    text-align: center
+    margin-right: 0.5rem
+    margin-bottom: 0.12rem
+
+span.soft
+    color: $theme-dark-60
+    font-size: 0.9em
+
+.pill
+    border: 1px $theme-darkgray solid
+    // background: pink
+    padding: 0.2rem 0.4rem
+    border-radius: 1rem
+
+    &-primary
+        background: $theme-primary-80
+        color: $theme-soft
+        border-color: $theme-primary-80
+    &-primary-soft
+        background: $theme-primary-soft
+        color: $theme-darkgray
+        border-color: $theme-primary-soft
+    &-accent-soft
+        background: $theme-accent-soft
+        color: $theme-darkgray
+        border-color: $theme-accent-soft

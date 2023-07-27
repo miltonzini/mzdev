@@ -1,0 +1,53 @@
+section#sub-planes
+    padding: 0px 20px 80px 20px
+    background: $theme-soft
+    background: $soft-gradient
+    //min-height: 70vh
+
+    h2
+        text-align: center
+        color: $theme-primary
+        padding-top: 60px
+        padding-bottom: 40px
+
+    .wrapper
+        flex-direction: row
+        @include breakpoint-down(small)
+            flex-direction: column
+            align-items: center
+    .plan
+        //border: 1px pink solid
+        padding-top: 4em
+        padding-bottom: 4em
+        text-align: center
+        line-height: 1.4em
+        .card-content
+            width: 15.25em
+        
+
+        &-title
+            font-weight: 400
+            font-size: 1.25rem
+            padding-bottom: 0.45rem
+            color: $theme-primary
+        
+        p
+            font-size: 0.9rem // 18px
+            @include breakpoint-down(medium)
+                font-size: 0.9rem
+
+        .price
+            color: $theme-accent
+            font-weight: 600
+            font-size: $font-xxl
+            margin-bottom: 0.35em
+            .currency
+                font-size: $font-md
+    .disclaimer
+        margin-top: 3em
+        color: $theme-dark-80
+
+            
+        // &:nth-child(2) // para compensar diferencia de altura en el segundo svg
+            //svg
+                //padding-bottom: 4px

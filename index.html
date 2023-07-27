@@ -1,11 +1,298 @@
+<!--
+
+    Mensaje para quien vea este código:
+    - Este sitio es un portfolio temporal para ser utilizado de forma provisoria mientras
+    se desarrolla uno más completo con dominio propio.
+    - Por fines prácticos y de tiempo usé la estructura y estilos del sitio web de mi 
+    emprendimiento (SencilloStudio). Por ese motivo es probable que haya nombres de clases
+    que, a pesar de ser funcionales, no sean semánticamente correctas.
+	Ejemplo: "div.servicios" debería llamarse "div.lenguajes".
+
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Milton Zini | Fullstack developer Jr">
+    <meta name="author" content="Milton Zini">
+
+    <meta property="og:title" content="Milton Zini | Fullstack developer Jr"/>
+    <meta property="og:type" content="website"/&gt;>
+    <meta property="og:image" content="#"/>
+    <meta property="og:url" content="https://mzdev.com.ar/"/>
+    <meta property="og:site_name" content="Milton Zini Developer"/>
+    <meta property="og:description" content="Milton Zini | Fullstack developer Jr"/>
+    <title>Milton Zini | Desarrollador Fullstack</title>
+
+	
+	
+	
+	<link rel="canonical" href="https://mzdev.com.ar" />
+	<link rel="apple-touch-icon" sizes="180x180" href="https://mzdev.com.ar/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://mzdev.com.ar/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://mzdev.com.ar/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://mzdev.com.ar/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="https://mzdev.com.ar/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="https://mzdev.com.ar/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="https://mzdev.com.ar/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="vendor/cssreset.css" rel="stylesheet" type="text/css">
+	<link href="css/sencillo.css" rel="stylesheet" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+
+	
 </head>
-<body>
-    <p>Asd Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam porro tenetur omnis sapiente cum voluptatibus odit tempora repellendus fugiat, sint sunt velit. Tempora officiis accusantium odio explicabo provident ipsam quibusdam.</p>
+<body id="miltonzinidev">
+	<header class="header">
+		<div class="overlay has-fade"></div>
+		<nav class="container flex flex-jc-sb flex-ai-c">
+			<!-- <a href="#" class="header__logo">
+				<img src="../../img/logo/sencillostudio-sm.svg" alt="SencilloStudio" />
+			</a> -->
+
+			<a id="btnHamburguer" href="#" class="header__toggle hide-for-desktop">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+
+			<div class="header__links hide-for-mobile">
+				<a href="#accent-1">Sobre mí</a>
+				<a href="#trabajos">Proyectos</a>
+				<a href="#accent-2">Links</a>
+				<a href="#contacto">Contacto</a>
+			</div>
+		</nav>
+		
+		<div class="header__menu has-fade">
+			<a class="header__menu__anchor" href="#accent-1">Sobre mí</a>
+			<a class="header__menu__anchor" href="#trabajos">Proyectos</a>
+			<a class="header__menu__anchor" href="#accent-2">Links</a>
+			<a class="header__menu__anchor" href="#contacto">Contacto</a>
+		</div>
+	</header>
+
+	<section id="masthead-lg">
+		<div class="img-container">			
+			<!-- <h1 class="brand-descrip"><span class="soluciones">Milton</span> <span class="digitales">Zini</span></h1> -->
+			<h1 class="main-title">Milton Zini</h1>
+			<h2 class="brand-descrip">Estudiante de desarrollo web fullstack</h2>
+			
+			<div class="shapes">
+				<img src="img/svg/triangle.svg" alt="triangle" class="triangle-1"/>
+				<img src="img/svg/diamond.svg" alt="triangle" class="diamond-1"/>
+				<img src="img/svg/diamond.svg" alt="triangle" class="diamond-2"/>
+			</div>
+		</div>
+	</section>
+
+	<section id="accent-1" class="accent accent-secondary accent-left">
+		<div class="row">
+			<div class="wrapper">
+				<p>Soy Milton, desarrollador fullstack en formación. Tengo experiencia en desarrollo frontend y diseño gráfico. Actualmente me encuentro trabajando como desarrollador freelance, utilizando las siguientes tecnologías: </p>
+				<p class="small">HTML, CSS, SASS, Javascript, PHP, Git, Github, Gulp, Figma, MySQL, Bash, etc.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="trabajos">
+		<div class="row">
+			<h2 class="section-title">Proyectos Recientes</h2>
+			<div class="wrapper flex flex-jc-c">
+				<a href="https://lig-neg-inmobiliarios.com.ar/" class="card card-imgLeft" target="_blank">
+					<div class="portada">
+						<img src="img/misc/sencillo-studio-liliana-garcia-negocios-inmobiliarios.webp" alt="">                        
+					</div>
+					<div class="card-content">
+						<div class="card-text">
+							<p class="titulo">Liliana I. García </p>
+							<div class="ubicacion">
+								<p>Sitio web dinámico autogestionable</p>
+							</div>
+							<div class="servicios">
+								<p class="pill pill-accent-soft">php</p>
+								<p class="pill pill-accent-soft">mysql</p>
+								<p class="pill pill-accent-soft">js</p>
+								<p class="pill pill-primary-soft">html</p>
+								<p class="pill pill-primary-soft">sass</p>
+								<p class="pill pill-accent-soft">git</p>
+								<p class="pill pill-primary-soft">UI</p>
+								<p class="pill pill-primary-soft">Figma</p>
+							</div>
+						</div>
+					</div>
+				</a>
+					
+				<a href="https://plaza-asturias.com.ar/" class="card card-imgLeft">
+					<div class="portada">
+						<img src="img/misc/sencillo-studio-plaza-asturias.webp" alt="">                        
+					</div>
+					<div class="card-content">
+						<div class="card-text">
+							<p class="titulo">Plaza Asturias</p>
+							<div class="ubicacion">
+								<p>Sitio web estático</p>
+							</div>
+							<div class="servicios">
+								<p class="pill pill-primary-soft">html</p>
+								<p class="pill pill-primary-soft">sass</p>
+								<p class="pill pill-accent-soft">js</p>
+								<p class="pill pill-accent-soft">git</p>
+								<p class="pill pill-primary-soft">UI</p>
+								<p class="pill pill-primary-soft">Figma</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://santuchotechos.com.ar/" class="card card-imgLeft">
+					<div class="portada">
+						<img src="img/misc/sencillo-studio-santucho-techos.webp" alt="">                        
+					</div>
+					<div class="card-content">
+						<div class="card-text">
+							<p class="titulo">Santucho Techos</p>
+							<div class="ubicacion">
+								<p>Sitio web</p>
+							</div>
+							<div class="servicios">
+								<p class="pill pill-accent-soft">php</p>
+								<p class="pill pill-accent-soft">js</p>
+								<p class="pill pill-primary-soft">html</p>
+								<p class="pill pill-primary-soft">sass</p>
+								<p class="pill pill-accent-soft">git</p>
+								<p class="pill pill-primary-soft">UI</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://sipa.com.pa/" class="card card-imgLeft">
+					<div class="portada">
+						<img src="img/misc/sencillo-studio-sipa-servicios-integrales-panama.webp" alt="">                        
+					</div>
+					<div class="card-content">
+						<div class="card-text">
+							<p class="titulo">SIPA</p>
+							<div class="ubicacion">
+								<p>Sitio web estático</p>
+							</div>
+							<div class="servicios">
+								<p class="pill pill-primary-soft">html</p>
+								<p class="pill pill-primary-soft">sass</p>
+								<p class="pill pill-accent-soft">js</p>
+								<p class="pill pill-accent-soft">git</p>
+								<p class="pill pill-primary-soft">UI</p>
+								<p class="pill pill-primary-soft">Figma</p>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://consultora-rbz.com/" class="card card-imgLeft">
+					<div class="portada">
+						<img src="img/misc/sencillo-studio-consultora-rbz.webp" alt="">                        
+					</div>
+					<div class="card-content">
+						<div class="card-text">
+							<p class="titulo">RBZ Consultores</p>
+							<div class="ubicacion">
+								<p>Sitio web estático</p>
+							</div>
+							<div class="servicios">
+								<p class="pill pill-primary-soft">html</p>
+								<p class="pill pill-primary-soft">sass</p>
+								<p class="pill pill-accent-soft">js</p>
+								<p class="pill pill-accent-soft">git</p>
+								<p class="pill pill-primary-soft">UI</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="https://atvcanto.ar/" class="card card-imgLeft">
+					<div class="portada">
+						<img src="img/misc/sencillo-studio-atv-canto.webp" alt="">                        
+					</div>
+					<div class="card-content">
+						<div class="card-text">
+							<p class="titulo">ATV Canto</p>
+							<div class="ubicacion">
+								<p>Sitio web estático</p>
+							</div>
+							<div class="servicios">
+								<p class="pill pill-primary-soft">html</p>
+								<p class="pill pill-primary-soft">sass</p>
+								<p class="pill pill-accent-soft">js</p>
+								<p class="pill pill-accent-soft">git</p>
+								<p class="pill pill-primary-soft">UI</p>
+								<p class="pill pill-primary-soft">Figma</p>
+							</div>
+						</div>
+					</div>
+				</a>
+				<p class="disclaimer">Actualmente estoy trabajando en un sistema de gestión para negocios inmobiliarios con arquitectura <strong>MVC</strong>, utilizando <strong>PHP</strong>, <strong>MySQL</strong> y <strong>JS</strong>, además de herramientas como Gulp y Github. Próximamente compartiré ese y otros proyectos.</p>
+				
+				
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="accent-2" class="accent accent-secondary accent-left">
+		<div class="row">
+			<div class="wrapper">
+				<h2 class="section-title">Links</h2>
+				<div class="btn-wrapper">
+					<a href="https://github.com/miltonzini" class="button" id="myBtn" target="_blank">Gituhub</a>
+					<a href="https://www.linkedin.com/in/miltonzini/" class="button" id="myBtn" target="_blank">Linkedin</a>
+					<a href="docs/cv-miltonzini-07-23.pdf" class="button" id="myBtn" target="_blank">CV (pdf)</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacto">
+		<div class="row">
+			<h2 class="section-title">Contacto</h2>
+
+			<a href="mailto:miltonzini@gmail.com" target="_blank">
+				<div class="link-wrapper link-wrapper-envelope">
+					<svg xmlns="http://www.w3.org/2000/svg" width="27.86" height="20.895" viewBox="0 0 27.86 20.895"><g id="envelope" data-name="Grupo 3" transform="translate(-280.226 -2603)"><path id="envelope" d="M0,5.482A3.482,3.482,0,0,1,3.482,2H24.377A3.482,3.482,0,0,1,27.86,5.482v13.93a3.482,3.482,0,0,1-3.482,3.483H3.482A3.483,3.483,0,0,1,0,19.412ZM3.482,3.741A1.741,1.741,0,0,0,1.741,5.482V5.86L13.93,13.174,26.119,5.86V5.482a1.741,1.741,0,0,0-1.741-1.741ZM26.119,7.891l-8.285,4.971,8.285,5.008V7.892ZM26.06,19.867l-9.916-5.992L13.93,15.2l-2.215-1.329L1.8,19.865a1.741,1.741,0,0,0,1.682,1.289H24.377A1.741,1.741,0,0,0,26.06,19.867Zm-24.318-2,8.285-5.008L1.741,7.891v9.977Z" transform="translate(280.226 2601)" fill="#4067e3"/></g></svg>
+					<p>miltonzini@gmail.com</p>
+				</div>
+			</a>
+			<a href="https://wa.me/5491165981357" target="_blank">
+				<div class="link-wrapper link-wrapper-whatsapp">
+					<svg xmlns="http://www.w3.org/2000/svg" width="25.423" height="25.538" viewBox="0 0 25.423 25.538"><path id="whatsapp" d="M21.709,3.713A12.536,12.536,0,0,0,12.76,0,12.664,12.664,0,0,0,1.789,18.98L0,25.538l6.71-1.759a12.662,12.662,0,0,0,6.049,1.54h.006A12.651,12.651,0,0,0,21.708,3.713ZM12.76,23.178A10.491,10.491,0,0,1,7.4,21.709l-.383-.23L3.039,22.523,4.1,18.64l-.249-.4a10.514,10.514,0,1,1,8.906,4.938ZM18.53,15.3c-.314-.158-1.867-.923-2.16-1.031s-.5-.158-.71.158-.819,1.031-1,1.237-.37.236-.686.08a8.634,8.634,0,0,1-2.541-1.572,9.65,9.65,0,0,1-1.761-2.19c-.182-.316-.018-.485.14-.643.139-.14.314-.37.472-.552a2.018,2.018,0,0,0,.316-.527.589.589,0,0,0-.024-.554C10.5,9.55,9.866,7.99,9.6,7.361s-.516-.535-.71-.543-.394-.011-.607-.011a1.164,1.164,0,0,0-.844.394,3.544,3.544,0,0,0-1.1,2.64,6.126,6.126,0,0,0,1.293,3.27,14.059,14.059,0,0,0,5.4,4.776,17.593,17.593,0,0,0,1.8.667,4.344,4.344,0,0,0,1.989.128,3.276,3.276,0,0,0,2.136-1.505,2.647,2.647,0,0,0,.182-1.505c-.078-.134-.29-.212-.607-.37Z" fill="#4067e3"/></svg>
+					<p>(+54) 11-6598-1357</p>
+				</div>
+			</a>		
+		</div>
+	</section>
+
+	<section class="footer">
+		<div class="row">
+			<br>
+			<p class="social">
+				¡Gracias por leer!
+			</p>
+		</div>
+	</section>
+	
+	<script type="text/javascript">
+		window.addEventListener("scroll", function(){
+			var header = document.querySelector("nav");
+			header.classList.toggle("sticky", window.scrollY > 180);
+		})
+	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>

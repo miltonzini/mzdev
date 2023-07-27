@@ -1,0 +1,50 @@
+section#trabajos
+    padding: 5em 20px
+    background: $theme-soft
+    background: $soft-gradient-180
+    //min-height: 70vh
+
+    h2.section-title
+        text-align: center
+        color: $theme-primary
+        padding-bottom: 57px
+
+    .wrapper
+        //display: flex
+        flex-direction: row
+        @include breakpoint-down(small)
+            flex-direction: column
+            align-items: center
+    .trabajo
+        //border: 1px pink solid
+         display: flex
+        -ms-flex-direction: column
+        flex-direction: column
+        text-align: center
+        line-height: 1.3em
+
+        img
+            width: 100%
+            margin-bottom: 1em
+
+        h2
+            color: $theme-primary
+            font-weight: 400
+            font-size: 1.25rem
+            padding-bottom: 0.45rem
+        
+        p
+            font-size: 0.9rem // 18px
+            @include breakpoint-down(medium)
+                font-size: 0.9rem
+        ul
+            text-align: left
+            font-weight: regular
+            padding-top: 0.25em
+            padding-left: 1em
+            
+
+            
+        // &:nth-child(2) // para compensar diferencia de altura en el segundo svg
+            //svg
+                //padding-bottom: 4px

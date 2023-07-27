@@ -1,0 +1,211 @@
+.has-fade
+    visibility: hidden
+    
+@keyframes fade-in
+    from
+        visibility: hidden
+        opacity: 0
+    1%
+        visibility: visible
+        opacity: 0
+    to
+        visibility: visible
+        opacity: 1
+
+.fade-in 
+    animation: fade-in 300ms ease-in-out forwards    
+
+@keyframes fade-out
+    from
+        visibility: visible
+        opacity: 1
+    99%
+        visibility: visible
+        opacity: 0
+    to
+        visibility: hidden
+        opacity: 0
+
+.fade-out
+    animation: fade-out 300ms ease-in-out forwards
+
+// shapes
+@keyframes shape-1-lg
+    from
+        top: 500px
+        left: -10px
+        transform: scale(20%)
+        opacity: 45%
+    50%
+        top: -10px
+        left: 500px
+        transform: scale(60%)
+        transform: rotate(30deg)
+        opacity: 5%
+    70%
+        transform: scale(30%)
+        opacity: 80%
+    99%
+        transform: scale(1%)
+        opacity: 10%
+    to
+        top: 700px
+        left: 1200px
+        transform: scale(1%)
+        transform: rotate(60deg)
+
+@keyframes shape-1-sm
+    from
+        top: 500px
+        left: -10px
+        transform: scale(20%)
+        opacity: 45%
+    50%
+        top: -10px
+        left: 200px
+        transform: scale(60%)
+        transform: rotate(55deg)
+        opacity: 5%
+    85%
+        transform: scale(30%)
+        opacity: 80%
+    99%
+        transform: scale(1%)
+        opacity: 10%
+    to
+        top: 700px
+        left: 1200px
+        transform: scale(1%)
+        transform: rotate(60deg)
+
+@keyframes shape-2-lg
+    from
+        right: -50px
+        opacity: 10%
+    30%  
+        opacity: 40%
+    60%
+        opacity: 20%
+    to
+        right: 1500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-2-sm
+    from
+        right: -50px
+        transform: scale(80%)
+        opacity: 1%
+        transform: rotate(-60deg)
+    30%  
+        opacity: 40%
+    60%
+        opacity: 20%
+        //transform: rotate(-20deg)
+    99%
+        transform: scale(10%)
+    to
+        transform: scale(8%)
+        right: 500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-3-lg
+    from
+        right: -50px
+        bottom: 500px
+        opacity: 10%
+    30%  
+        opacity: 40%
+    60%
+        opacity: 60%
+    to
+        right: 1500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-3-sm
+    from
+        right: -50px
+        bottom: 500px
+        opacity: 10%
+    30%  
+        opacity: 25%
+    60%
+        opacity: 40%
+    to
+        right: 500px
+        opacity: 2%
+        transform: rotate(60deg)
+
+@keyframes shape-accent1-pentagon-lg
+    from
+        transform: rotate(0deg)
+    50%
+        transform: rotate(25deg)
+    to
+        transform: rotate(0deg)
+
+@keyframes shape-accent1-diamond-lg
+    from
+        transform: rotate(1deg)
+        //transform: scale(100%)
+    50%
+        transform: rotate(60deg)
+        //transform: scale(130%)
+    to
+        transform: rotate(1deg)
+        //transform: scale(90%)
+
+@keyframes shape-accent1-triangle-lg
+    from
+        transform: rotateX(0deg)
+        transform: scale(60%)
+    50%
+        transform: rotateX(60deg)
+        transform: scale(125%)    
+    to
+        transform: rotate(0deg)
+        transform: scale(60%)
+
+@keyframes shape-accent1-pentagon-md
+    from
+        transform: rotate(0deg)
+    50%
+        transform: rotate(35deg)
+    to
+        transform: rotate(0deg)
+
+@keyframes shape-accent1-diamond-md
+    from
+        transform: scale(90%)
+    50%
+        transform: scale(110%)
+    to
+        transform: scale(90%)
+
+@keyframes shape-accent1-triangle-md
+    from
+        transform: rotate(0deg)
+        transform: scale(60%)
+    50%
+        transform: rotate(-25deg)
+        transform: scale(75%)    
+    to
+        transform: rotate(0deg)
+        transform: scale(60%)
+
+@keyframes shape-appear-dissappear
+    from
+        visibility: hidden
+        opacity: 0
+    70%
+        visibility: visible
+        opacity: 1
+    99%
+        visibility: hidden
+        opacity: 0
+    to
+        visibility: hidden
+        opacity: 0
+

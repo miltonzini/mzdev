@@ -1,0 +1,48 @@
+section#servicios
+    padding: 93px 20px 93px 20px
+    background: $theme-soft
+    background: $soft-gradient
+    //min-height: 70vh
+
+    h1
+        text-align: center
+        color: $theme-primary
+        padding-bottom: 57px
+
+    .wrapper
+        //display: flex
+        flex-direction: row
+        @include breakpoint-down(small)
+            flex-direction: column
+            align-items: center
+    .servicio
+        //border: 1px pink solid
+        text-align: center
+        line-height: 1.3em
+
+        h2
+            font-weight: 400
+            font-size: 1.25rem
+            padding-bottom: 0.45rem
+        
+        p
+            font-size: 0.9rem // 18px
+            @include breakpoint-down(medium)
+                font-size: 0.9rem
+        svg
+            //padding-bottom: 0.45rem
+            margin-bottom: 0.7rem
+            height: auto
+            path
+                fill: $theme-accent
+            &.bi-brush
+                width: 4rem
+            &.bi-braces
+                width: 5.6rem
+            &.bi-shop
+                width: 4.3rem
+
+            
+        // &:nth-child(2) // para compensar diferencia de altura en el segundo svg
+            //svg
+                //padding-bottom: 4px

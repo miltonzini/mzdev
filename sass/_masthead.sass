@@ -1,0 +1,202 @@
+section#masthead-lg
+    background-color: $theme-soft
+    background: $soft-gradient-45
+    display: flex
+    justify-content: center /* align horizontal */
+    align-items: center /* align vertical */
+    flex-direction: column
+    height: 100vh
+    overflow: hidden
+    position: relative
+
+    .img-container
+        /*background-color: pink*/
+        z-index: 3
+
+    img.logo, svg.logo
+        //temp mediaqueries
+        @media(min-width: 900px)
+            width: 37vw
+        @media(max-width: 899px)
+            width: 50vw
+        z-index: 3
+    
+
+    
+    .brand-descrip
+        font-size: 1.25em
+        text-align: center
+        margin-top: 0.6rem
+        line-height: 1.25rem
+        max-width: 19rem
+        letter-spacing: 0.15em
+        @media (max-width: 299px)
+            font-size: 0.8em
+            letter-spacing: 0.1em
+        @media (min-width: 300px) and (max-width: 499px)
+            font-size: 0.9em
+        @media (min-width: 500px) and (max-width: 899px)
+            font-size: 1.15em
+        span.soluciones
+            animation: 3s fade-in
+        span.digitales
+            animation: 5.5s fade-in
+        z-index: 3
+
+    .shapes
+        overflow: hidden
+        display: block
+        //position: relative
+        img
+            position: absolute
+            z-index: 1
+        .triangle-1
+            left: 2em
+            bottom: 2em
+            @include breakpoint-up(medium)
+                animation: shape-1-lg 22s linear infinite
+            @include breakpoint-down(small)
+                animation: shape-1-sm 22s linear infinite
+        .diamond-1
+            right: -100px
+            bottom: 1em
+            @include breakpoint-up(medium)
+                animation: shape-2-lg 16s linear infinite
+            @include breakpoint-down(small)
+                animation: shape-2-sm 10s linear infinite
+        .diamond-2
+            right: -100px
+            bottom: 1em
+            transform: scale(20%)
+            @include breakpoint-up(medium)
+                animation: shape-3-lg 25s linear infinite
+            @include breakpoint-down(small)
+                animation: shape-3-sm 20s linear infinite
+
+
+section#masthead-sm
+    //background: $white
+    background: $theme-soft url("../img/bg/hola.jpg") no-repeat
+    background-size: cover
+    @media (max-width: 574px)
+        background-position: center 50%
+    @media (min-width: 575px) and (max-width: 690px)
+        background-position: center 60%
+    @media (min-width: 691px) and (max-width: 899px)
+        background-position: center 64%
+    @media (min-width: 900px) and (max-width: 1100px)
+        background-position: center 65%
+    @media (min-width: 1101px)
+        background-position: center 64%
+
+
+    display: flex
+    justify-content: center /* align horizontal */
+    align-items: center /* align vertical */
+    flex-direction: column
+    height: 45vh
+    overflow: hidden
+    position: relative
+    padding-top: 2em
+
+    .img-container
+        /*background-color: pink*/
+        z-index: 3
+
+    img.logo, svg.logo
+        //temp mediaqueries
+        @media(min-width: 900px)
+            width: 25vw
+        @media(max-width: 899px)
+            width: 50vw
+        z-index: 3
+    
+
+    
+    .brand-descrip
+        font-size: 1.25em
+        text-align: center
+        margin-top: 0.6rem
+        line-height: 1.25rem
+        max-width: 19rem
+        letter-spacing: 0.15em
+        @media (max-width: 299px)
+            font-size: 0.8em
+            letter-spacing: 0.1em
+        @media (min-width: 300px) and (max-width: 499px)
+            font-size: 0.9em
+        @media (min-width: 500px) and (max-width: 899px)
+            font-size: 1.15em
+        span.soluciones
+            animation: 3s fade-in
+        span.digitales
+            animation: 5.5s fade-in
+        z-index: 3
+
+    .shapes
+        position: absolute
+        margin: 0px
+        padding: 0px
+        left: 15vw
+        top: 12px
+        opacity: 0.75
+        
+        
+        @media (max-width: 599px)
+            left: 25px
+            top: 0px
+            opacity: 0.25
+
+        @media (min-width: 600px) and (max-width: 799px)
+            transform: scale(60%)
+            left: -55px
+            top: 20px
+
+        @media (min-width: 800px) and (max-width: 899px)
+            transform: scale(75%)
+            left: -30px
+            top: 15px
+            
+
+        
+        img
+            position: relative
+            z-index: 1
+            transform: scale(45%)
+            visibility: hidden
+            opacity: 0
+
+
+        .appear-triangle
+            animation: shape-appear-dissappear 1.7s linear infinite        
+            animation-iteration-count: 1
+            top: 90px
+        .appear-diamond
+            animation: shape-appear-dissappear 1.7s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 0.5s  
+            top: 20px
+        .appear-pentagon
+            animation: shape-appear-dissappear 1.7s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 1s
+            top: 70px
+        .appear-hendecagon
+            animation: shape-appear-dissappear 1.7s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 1.5s
+            top: 10px
+            
+            @media (max-width: 459px)
+                left: 40px
+                top: 25px
+        .appear-circle
+            animation: shape-appear-dissappear 1.7s linear infinite
+            animation-iteration-count: 1
+            animation-delay: 2s
+            top: 50px
+            
+            @media (max-width: 584px)
+                left: 60px
+                
+        
