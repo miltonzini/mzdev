@@ -41,6 +41,10 @@ h2.section-title
     font-size: 1.5em
     text-align: center
 
+a:hover, a:focus, a:active
+    text-decoration: none
+    font-weight: inherit
+
 section
     scroll-margin-top: 51px // navbar height
 
@@ -197,6 +201,28 @@ section
 
 // Buttons
     //
+.btn
+    // background: pink
+    padding: 1rem 2rem
+    border-radius: 2rem
+
+    &-light
+        @extend .btn
+        background: $theme-soft
+        color: $theme-accent
+
+
+    &-outlined-light
+        @extend .btn
+        border: 1px solid $theme-soft
+        color: $theme-soft
+        transition: all 300ms ease
+        &:hover
+            border: 1px solid $theme-soft
+            background: $theme-soft
+            color: $theme-accent
+            
+
 
 // Visibility
 .hide-for-mobile

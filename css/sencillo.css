@@ -662,6 +662,11 @@ h2.section-title {
   text-align: center;
 }
 
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
 section {
   scroll-margin-top: 51px;
 }
@@ -886,6 +891,26 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.btn, .btn-outlined-light, .btn-light {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.btn-light {
+  background: #f3f5f4;
+  color: #4067e3;
+}
+.btn-outlined-light {
+  border: 1px solid #f3f5f4;
+  color: #f3f5f4;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+.btn-outlined-light:hover {
+  border: 1px solid #f3f5f4;
+  background: #f3f5f4;
+  color: #4067e3;
 }
 
 @media (max-width: 39.9375em) {
@@ -2016,7 +2041,7 @@ body#miltonzinidev section#accent-2 .btn-wrapper {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body#miltonzinidev section#accent-2 .btn-wrapper a.button {
+body#miltonzinidev section#accent-2 .btn-wrapper a.btn, body#miltonzinidev section#accent-2 .btn-wrapper a.btn-light, body#miltonzinidev section#accent-2 .btn-wrapper a.btn-outlined-light {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 0.2rem;
