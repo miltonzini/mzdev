@@ -145,26 +145,24 @@
                 <!-- Audacity -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/mzdev-samples-audacity-real-estate.webp" alt="Plaza Asturias">
+                        <img src="img/mzdev-samples-audacity-realestate.webp" alt="Plaza Asturias">
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client1_title']; ?></h3>
                         <p><?php echo $texts['client1_desc']; ?></p>
                         <div class="tags">
-                            <span>Angular</span>
-                            <span>Java Spring</span>
+                            <span>Laravel</span>
                             <span>MySQL</span>
-                            <span>Docker</span>
                         </div>
                         <div class="card-links">
                             <a href="#" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
                                 <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
                                 <?php echo $texts['case_study']; ?>
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -179,10 +177,8 @@
                         <h3><?php echo $texts['client2_title']; ?></h3>
                         <p><?php echo $texts['client2_desc']; ?></p>
                         <div class="tags">
-                            <span>React Native</span>
-                            <span>Node.js</span>
-                            <span>Firebase</span>
-                            <span>Stripe</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
                         </div>
                         <div class="card-links">
                             <a href="#" class="card-link">
@@ -206,10 +202,8 @@
                         <h3><?php echo $texts['client3_title']; ?></h3>
                         <p><?php echo $texts['client3_desc']; ?></p>
                         <div class="tags">
-                            <span>React Native</span>
-                            <span>Node.js</span>
-                            <span>Firebase</span>
-                            <span>Stripe</span>
+                            <span>PHP</span>
+                            <!-- <span>MySQL</span> -->
                         </div>
                         <div class="card-links">
                             <a href="#" class="card-link">
@@ -224,19 +218,43 @@
                     </div>
                 </div>
 
+                <!-- Matías Palou -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/mzdev-samples-matiaspalou-com-ar.webp" alt="Matías Palou">
+                    </div>
+                    <div class="card-content">
+                        <h3><?php echo $texts['client4_title']; ?></h3>
+                        <p><?php echo $texts['client4_desc']; ?></p>
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#" class="card-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <?php echo $texts['visit_site']; ?>
+                            </a>
+                            <a href="#" class="card-link">
+                                <i class="fas fa-info-circle"></i>
+                                <?php echo $texts['case_study']; ?>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Maseret Visuals -->
                 <div class="card">
                     <div class="card-image">
                         <img src="img/mzdev-samples-maseretvisuals-com-ar.webp" alt="Maserete Visuals">
                     </div>
                     <div class="card-content">
-                        <h3><?php echo $texts['client4_title']; ?></h3>
-                        <p><?php echo $texts['client4_desc']; ?></p>
+                        <h3><?php echo $texts['client5_title']; ?></h3>
+                        <p><?php echo $texts['client5_desc']; ?></p>
                         <div class="tags">
-                            <span>Vue.js</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                            <span>AWS</span>
+                            <span>PHP</span>
+                            <!-- <span>MySQL</span> -->
                         </div>
                         <div class="card-links">
                             <a href="#" class="card-link">
@@ -251,33 +269,7 @@
                     </div>
                 </div>
                 
-                <!-- Matías Palou -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/mzdev-samples-matiaspalou-com-ar.webp" alt="Matías Palou">
-                    </div>
-                    <div class="card-content">
-                        <h3><?php echo $texts['client5_title']; ?></h3>
-                        <p><?php echo $texts['client5_desc']; ?></p>
-                        <div class="tags">
-                            <span>Vue.js</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                            <span>AWS</span>
-                        </div>
-                        <div class="card-links">
-                            <a href="#" class="card-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                <?php echo $texts['visit_site']; ?>
-                            </a>
-                            <a href="#" class="card-link">
-                                <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+                
                 <!-- Ananké -->
                 <div class="card">
                     <div class="card-image">
@@ -287,10 +279,8 @@
                         <h3><?php echo $texts['client6_title']; ?></h3>
                         <p><?php echo $texts['client6_desc']; ?></p>
                         <div class="tags">
-                            <span>Vue.js</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                            <span>AWS</span>
+                            <span>PHP</span>
+                            <!-- <span>MySQL</span> -->
                         </div>
                         <div class="card-links">
                             <a href="#" class="card-link">
@@ -305,19 +295,17 @@
                     </div>
                 </div>
 
-                <!-- SIPA --> <!-- Constructora del Sur -->
+                <!-- Constructora del Sur -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/mzdev-samples-sipa-servicios-integrales-panama.webp" alt="Servicios Integrales Panamá">
+                        <img src="img/mzdev-samples-constructora-del-sur-panama.webp" alt="Constructora del Sur">
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client7_title']; ?></h3>
                         <p><?php echo $texts['client7_desc']; ?></p>
                         <div class="tags">
-                            <span>Vue.js</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                            <span>AWS</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
                         </div>
                         <div class="card-links">
                             <a href="#" class="card-link">
