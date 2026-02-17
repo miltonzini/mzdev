@@ -19,9 +19,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milton Zini | <?php echo $texts['title']; ?></title>
+    <title>Milton Zini Dev | <?php echo $texts['title']; ?></title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <meta name="description" content="Milton Zini – Desarrollador web fullstack especializado en Laravel, PHP, MySQL y JavaScript. Portfolio de proyectos y experiencia.">
+    <meta name="keywords" content="Laravel, PHP, MySQL, JavaScript, desarrollador web, fullstack, Argentina">
+    <meta name="author" content="Milton Zini">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="http://mzdev.com.ar/">
+
+    <meta property="og:title" content="Milton Zini – Desarrollador Web">
+    <meta property="og:description" content="Portfolio de proyectos en Laravel, PHP, MySQL y más.">
+    <meta property="og:image" content="http://mzdev.com.ar/img/misc/mz-laravel-rest-api-sample.webp">
+    <meta property="og:url" content="http://mzdev.com.ar/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Milton Zini – Desarrollador Web">
+    <meta name="twitter:description" content="Portfolio de proyectos en Laravel, PHP, MySQL y más.">
+    <meta name="twitter:image" content="http://mzdev.com.ar/img/misc/mz-laravel-rest-api-sample.webp">
 </head>
 <body>
 <nav class="navbar">
@@ -145,23 +162,25 @@
                 <!-- Audacity -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/mzdev-samples-audacity-realestate.webp" alt="Plaza Asturias">
+                        <img src="img/mzdev-samples-audacity-realestate.webp" alt="Audacity Real Estate">
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client1_title']; ?></h3>
+                        <h4><?php echo $texts['client1_subtitle']; ?></h4>
                         <p><?php echo $texts['client1_desc']; ?></p>
                         <div class="tags">
                             <span>Laravel</span>
                             <span>MySQL</span>
+                            <span>Rest API</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://audacity.com.ar/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
                                 <?php echo $texts['visit_site']; ?>
                             </a>
                             <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
+                                <?php //echo $texts['case_study']; ?>
                             </a> -->
                         </div>
                     </div>
@@ -171,24 +190,25 @@
                 <!-- LIG -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/mzdev-samples-liliana-garcia-negocios-inmobiliarios.webp" alt="Audacity Real Estate">
+                        <img src="img/mzdev-samples-liliana-garcia-negocios-inmobiliarios.webp" alt="Liliana García Negocios Inmobiliarios">
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client2_title']; ?></h3>
+                        <h4><?php echo $texts['client2_subtitle']; ?></h4>
                         <p><?php echo $texts['client2_desc']; ?></p>
                         <div class="tags">
                             <span>Laravel</span>
                             <span>MySQL</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://lig-neg-inmobiliarios.com.ar/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
-                                App Store
+                                <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
+                                <?php //echo $texts['case_study']; ?>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -196,24 +216,25 @@
                 <!-- Asturias -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/mzdev-samples-plaza-asturias.webp" alt="Liliana García Negocios Inmobiliarios">
+                        <img src="img/mzdev-samples-plaza-asturias.webp" alt="Plaza Asturias | Cocina Española">
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client3_title']; ?></h3>
+                        <h4><?php echo $texts['client3_subtitle']; ?></h4>
                         <p><?php echo $texts['client3_desc']; ?></p>
                         <div class="tags">
                             <span>PHP</span>
                             <!-- <span>MySQL</span> -->
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://plaza-asturias.com.ar/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
-                                App Store
+                                <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
+                                <?php //echo $texts['case_study']; ?>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -225,20 +246,21 @@
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client4_title']; ?></h3>
+                        <h4><?php echo $texts['client4_subtitle']; ?></h4>
                         <p><?php echo $texts['client4_desc']; ?></p>
                         <div class="tags">
                             <span>Laravel</span>
                             <span>MySQL</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://matiaspalou.com.ar/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
                                 <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
+                                <?php //echo $texts['case_study']; ?>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -247,24 +269,25 @@
                 <!-- Maseret Visuals -->
                 <div class="card">
                     <div class="card-image">
-                        <img src="img/mzdev-samples-maseretvisuals-com-ar.webp" alt="Maserete Visuals">
+                        <img src="img/mzdev-samples-maseretvisuals-com-ar.webp" alt="Maseret Visuals">
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client5_title']; ?></h3>
+                        <h4><?php echo $texts['client5_subtitle']; ?></h4>
                         <p><?php echo $texts['client5_desc']; ?></p>
                         <div class="tags">
                             <span>PHP</span>
                             <!-- <span>MySQL</span> -->
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://maseretvisuals.com.ar/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
                                 <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
+                                <?php //echo $texts['case_study']; ?>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -277,20 +300,21 @@
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client6_title']; ?></h3>
+                        <h4><?php echo $texts['client6_subtitle']; ?></h4>
                         <p><?php echo $texts['client6_desc']; ?></p>
                         <div class="tags">
                             <span>PHP</span>
                             <!-- <span>MySQL</span> -->
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://adiccionesananke.com.ar/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
                                 <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
+                                <?php //echo $texts['case_study']; ?>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -302,20 +326,21 @@
                     </div>
                     <div class="card-content">
                         <h3><?php echo $texts['client7_title']; ?></h3>
+                        <h4><?php echo $texts['client7_subtitle']; ?></h4>
                         <p><?php echo $texts['client7_desc']; ?></p>
                         <div class="tags">
                             <span>Laravel</span>
                             <span>MySQL</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-link">
+                            <a href="https://constructoradelsur.com.pa/" target="_blank" class="card-link">
                                 <i class="fas fa-external-link-alt"></i>
                                 <?php echo $texts['visit_site']; ?>
                             </a>
-                            <a href="#" class="card-link">
+                            <!-- <a href="#" class="card-link">
                                 <i class="fas fa-info-circle"></i>
-                                <?php echo $texts['case_study']; ?>
-                            </a>
+                                <?php //echo $texts['case_study']; ?>
+                            </a> -->
                         </div>
                     </div>
                 </div>
@@ -417,5 +442,20 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Milton Zini",
+    "url": "https://tu-dominio.com",
+    "jobTitle": "Desarrollador Web",
+    "knowsAbout": ["Laravel", "PHP", "MySQL", "JavaScript"],
+    "sameAs": [
+        "https://github.com/miltonzini",
+        "https://linkedin.com/in/tu-usuario"
+    ]
+    }
+    </script>
 </body>
 </html>

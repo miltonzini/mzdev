@@ -390,6 +390,12 @@ h2 {
 .card-content h3 {
     font-size: 1.25rem;
     color: var(--text-color);
+}
+
+.card-content h4 {
+    color: var(--text-color);
+    font-weight: normal;
+    line-height: 1;
     margin-bottom: 0.5rem;
 }
 

@@ -1,7 +1,7 @@
 <?php
 $texts = [
     // Meta
-    'title' => 'Desarrollador Full Stack',
+    'title' => 'Desarrollador Web – Laravel & PHP',
     
     // Navigation
     'nav_home' => 'Inicio',
@@ -48,19 +48,32 @@ $texts = [
     // Client Projects Section
     'client_projects_title' => 'Proyectos realizados a Clientes',
     'client1_title' => 'Sitio web Inmobiliario',
-    'client1_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
+    'client1_subtitle' => 'audacity.com.ar',
+    'client1_desc' => 'Integración con Tokko CRM. Desarrollo full-stack. Panel de administración de propiedades, emprendimientos y blog.',
+    
     'client2_title' => 'Sitio web Inmobiliario',
-    'client2_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
+    'client2_subtitle' => 'lig-neg-inmobiliarios.com.ar',
+    'client2_desc' => 'Desarrollo Full-stack. Panel de administración de blog, propiedades, emprendimientos y terrenos.',
+    
     'client3_title' => 'Sitio Web Gastronomía',
-    'client3_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client4_title' => 'Sitio Web Multilingue',
-    'client4_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client5_title' => 'Sitio Web',
-    'client5_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client6_title' => 'Sitio Web',
-    'client6_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client7_title' => 'Sitio Web',
-    'client7_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
+    'client3_subtitle' => 'plaza-asturias.com.ar',
+    'client3_desc' => 'Desarrollo full-stack.',
+    
+    'client4_title' => 'Sitio Web Artístico Multilingue',
+    'client4_subtitle' => 'matiaspalou.com.ar',
+    'client4_desc' => 'Desarrollo full-stack. Panel de administración de novedades.',
+    
+    'client5_title' => 'Sitio Web Productora Audiovisual',
+    'client5_subtitle' => 'maseretvisuals.com.ar',
+    'client5_desc' => 'Desarrollo full-stack.',
+    
+    'client6_title' => 'Sitio Web Centro de Adicciones',
+    'client6_subtitle' => 'adiccionesananke.com.ar',
+    'client6_desc' => 'Desarrollo full-stack.',
+    
+    'client7_title' => 'Sitio Web Constructora',
+    'client7_subtitle' => 'constructoradelsur.com.pa',
+    'client7_desc' => 'Desarrollo full-stack.',
     
     // Common Project Elements
     'details' => 'Detalles',

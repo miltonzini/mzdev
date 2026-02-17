@@ -1,7 +1,7 @@
 <?php
 $texts = [
     // Meta
-    'title' => 'Full Stack Developer',
+    'title' => 'Laravel & PHP Web developer',
     
     // Navigation
     'nav_home' => 'Home',
@@ -37,27 +37,42 @@ $texts = [
     'projects_title' => 'Recent Projects',
     'project1_title' => 'Real Estate Website / CMS',
     'project1_desc' => 'Complete real estate website with admin dashboard.',
-    'project2_title' => 'AI Chat Application',
-    'project2_desc' => 'Real-time chat application with AI integration for automated responses.',
+
+    'project2_title' => 'Blog administration REST API (Laravel)',
+    'project2_desc' => 'The idea behind this repository is to test the development of a complete API with authentication, authorization, user roles, etc.',
+    
     'project3_title' => 'Financial Dashboard',
     'project3_desc' => 'Analytics dashboard for investment tracking and real-time market analysis.',
     
     // Client Projects Section
     'client_projects_title' => 'Client Projects',
     'client1_title' => 'Real Estate Website',
-    'client1_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
+    'client1_subtitle' => 'audacity.com.ar',
+    'client1_desc' => 'Integration with Tokko CRM. Full-stack website development. Admin dashboard for properties, developments and blog.',
+    
     'client2_title' => 'Real Estate Website',
-    'client2_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
+    'client2_subtitle' => 'lig-neg-inmobiliarios.com.ar',
+    'client2_desc' => 'Full-stack website development. Admin dashboard for Blog, properties, developments and lots.',
+    
     'client3_title' => 'Gastronomy Web Site',
-    'client3_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client4_title' => 'Multi language Web Site',
-    'client4_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client5_title' => 'Web Site',
-    'client5_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client6_title' => 'Web Site',
-    'client6_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
-    'client7_title' => 'Web Site',
-    'client7_desc' => 'Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. Lorem ipsum dolor sit.',
+    'client3_subtitle' => 'plaza-asturias.com.ar',
+    'client3_desc' => 'Full-stack development.',
+    
+    'client4_title' => 'Multilingual Artistic Website',
+    'client4_subtitle' => 'matiaspalou.com.ar',
+    'client4_desc' => 'Full-stack development. News administration panel.',
+
+    'client5_title' => 'Audiovisual Production Website',
+    'client5_subtitle' => 'maseretvisuals.com.ar',
+    'client5_desc' => 'Full-stack development.',
+
+    'client6_title' => 'Addiction Treatment Center Website',
+    'client6_subtitle' => 'adiccionesananke.com.ar',
+    'client6_desc' => 'Full-stack development.',
+
+    'client7_title' => 'Construction Company Website',
+    'client7_subtitle' => 'constructoradelsur.com.pa',
+    'client7_desc' => 'Full-stack development.',
     
     // Common Project Elements
     'details' => 'Details',
