@@ -20,25 +20,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milton Zini Dev | <?php echo $texts['title']; ?></title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=2.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <meta name="description" content="Milton Zini – Desarrollador web fullstack especializado en Laravel, PHP, MySQL y JavaScript. Portfolio de proyectos y experiencia.">
     <meta name="keywords" content="Laravel, PHP, MySQL, JavaScript, desarrollador web, fullstack, Argentina">
     <meta name="author" content="Milton Zini">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="http://mzdev.com.ar/">
+    <link rel="canonical" href="https://mzdev.com.ar/">
 
     <meta property="og:title" content="Milton Zini – Desarrollador Web">
     <meta property="og:description" content="Portfolio de proyectos en Laravel, PHP, MySQL y más.">
-    <meta property="og:image" content="http://mzdev.com.ar/img/misc/mz-laravel-rest-api-sample.webp">
-    <meta property="og:url" content="http://mzdev.com.ar/">
+    <meta property="og:image" content="https://mzdev.com.ar/img/misc/mz-laravel-rest-api-sample.webp">
+    <meta property="og:url" content="https://mzdev.com.ar/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_AR">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Milton Zini – Desarrollador Web">
     <meta name="twitter:description" content="Portfolio de proyectos en Laravel, PHP, MySQL y más.">
-    <meta name="twitter:image" content="http://mzdev.com.ar/img/misc/mz-laravel-rest-api-sample.webp">
+    <meta name="twitter:image" content="https://mzdev.com.ar/img/misc/mz-laravel-rest-api-sample.webp">
 </head>
 <body>
 <nav class="navbar">
@@ -448,12 +448,11 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Milton Zini",
-    "url": "https://tu-dominio.com",
+    "url": "https://mzdev.com.ar/",
     "jobTitle": "Desarrollador Web",
     "knowsAbout": ["Laravel", "PHP", "MySQL", "JavaScript"],
     "sameAs": [
         "https://github.com/miltonzini",
-        "https://linkedin.com/in/tu-usuario"
     ]
     }
     </script>
