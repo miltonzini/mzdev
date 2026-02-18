@@ -18,7 +18,7 @@
     $mail->Port     = 587;
     $mail->SMTPAuth = true;
     $mail->Username = 'info@mzdev.com.ar';
-    $mail->Password = 'mzd457+PFR';
+    $mail->Password = 'pending_password';
     $mail->setFrom('info@mzdev.com.ar', 'Milton Zini Portfolio');
     $mail->addReplyTo($email, $name);
     $mail->addAddress('info@mzdev.com.ar', 'Milton Zini Portfolio');
