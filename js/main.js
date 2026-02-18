@@ -37,24 +37,66 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 const contactForm = document.getElementById('contact-form');
-
 if (contactForm) {
+    const lang = contactForm.dataset.lang;
+
+    const i18n = {
+        es: {
+            sending: 'Enviando...',
+            send: 'Enviar mensaje',
+            success: '¡Mensaje enviado con éxito!',
+            error: 'Hubo un error al enviar el mensaje.'
+        },
+        en: {
+            sending: 'Sending...',
+            send: 'Send Message',
+            success: 'Message sent successfully!',
+            error: 'There was an error sending your message.'
+        }
+    };
+
+    const t = i18n[lang] || i18n.es;
+
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        const formData = {
-            name: this.name.value,
-            email: this.email.value,
-            message: this.message.value
-        };
-        
-        // TODO: Lógica para el form
-        // ...
 
-        alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-        
+        const btn = this.querySelector('button[type="submit"]');
+        btn.disabled = true;
+        btn.textContent = t.sending;
+
+        const formData = new FormData(this);
+
+        fetch('enviarMail.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            showMessage(data.status, t);
+            btn.disabled = false;
+            btn.textContent = t.send;
+        })
+        .catch(() => {
+            showMessage('error', t);
+            btn.disabled = false;
+            btn.textContent = t.send;
+        });
+
         this.reset();
     });
+}
+
+function showMessage(status, t) {
+    const contact = document.getElementById('contact');
+    const existing = contact.querySelector('.form-alert');
+    if (existing) existing.remove();
+
+    const div = document.createElement('div');
+    div.className = `form-alert form-alert--${status}`;
+    div.textContent = status === 'success' ? t.success : t.error;
+
+    const container = contact.querySelector('.contact-container');
+    container.appendChild(div);
 }
 
 const observerOptions = {

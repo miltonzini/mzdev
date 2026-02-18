@@ -20,7 +20,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milton Zini Dev | <?php echo $texts['title']; ?></title>
-    <link rel="stylesheet" href="css/styles.css?v=2.0">
+    <link rel="stylesheet" href="css/styles.css?v=2.01">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <meta name="description" content="Milton Zini – Desarrollador web fullstack especializado en Laravel, PHP, MySQL y JavaScript. Portfolio de proyectos y experiencia.">
@@ -412,7 +412,7 @@
         <div class="container">
             <h2 class="text-center"><?php echo $texts['contact_title']; ?></h2>
             <div class="contact-container">
-                <form id="contact-form" class="contact-form">
+                <form id="contact-form" class="contact-form" action="enviarMail.php" method="post" data-lang="<?php echo $lang; ?>">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="<?php echo $texts['name_placeholder']; ?>" required>
                     </div>
@@ -426,6 +426,11 @@
                 </form>
             </div>
         </div>
+        <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
+            <div class="alert success">¡Mensaje enviado con éxito!</div>
+        <?php elseif (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
+            <div class="alert error">Hubo un error al enviar el mensaje.</div>
+        <?php endif; ?>
     </section>
 
     <footer class="footer">
@@ -441,7 +446,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2.01"></script>
 
     <script type="application/ld+json">
     {

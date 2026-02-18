@@ -508,6 +508,30 @@ h2 {
     resize: none;
 }
 
+.form-alert {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.form-alert--success {
+    background-color: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.3);
+    color: #22c55e;
+}
+.form-alert--error {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+}
+
+button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 /* Footer */
 .footer {
     background-color: var(--card-background);
